@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B160E1D17DF3EAD00237CF6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B160E1C17DF3EAD00237CF6 /* FacebookSDK.framework */; };
 		1B3F981117D5DB2000F88180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3F981017D5DB2000F88180 /* Foundation.framework */; };
 		1B3F981317D5DB2000F88180 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3F981217D5DB2000F88180 /* CoreGraphics.framework */; };
 		1B3F981517D5DB2000F88180 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3F981417D5DB2000F88180 /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		1B3F983217D5DB2000F88180 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3F981417D5DB2000F88180 /* UIKit.framework */; };
 		1B3F983A17D5DB2000F88180 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B3F983817D5DB2000F88180 /* InfoPlist.strings */; };
 		1B3F983C17D5DB2000F88180 /* DataCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F983B17D5DB2000F88180 /* DataCollectionTests.m */; };
+		1B3F984617D5DE3600F88180 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3F984517D5DE3600F88180 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B160E1C17DF3EAD00237CF6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../TryFirst/FacebookSDK.framework; sourceTree = "<group>"; };
 		1B3F980D17D5DB2000F88180 /* DataCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3F981017D5DB2000F88180 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1B3F981217D5DB2000F88180 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +56,7 @@
 		1B3F983717D5DB2000F88180 /* DataCollectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataCollectionTests-Info.plist"; sourceTree = "<group>"; };
 		1B3F983917D5DB2000F88180 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B3F983B17D5DB2000F88180 /* DataCollectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataCollectionTests.m; sourceTree = "<group>"; };
+		1B3F984517D5DE3600F88180 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3F984617D5DE3600F88180 /* CoreMotion.framework in Frameworks */,
+				1B160E1D17DF3EAD00237CF6 /* FacebookSDK.framework in Frameworks */,
 				1B3F981317D5DB2000F88180 /* CoreGraphics.framework in Frameworks */,
 				1B3F981517D5DB2000F88180 /* UIKit.framework in Frameworks */,
 				1B3F981117D5DB2000F88180 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,8 @@
 		1B3F980F17D5DB2000F88180 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B160E1C17DF3EAD00237CF6 /* FacebookSDK.framework */,
+				1B3F984517D5DE3600F88180 /* CoreMotion.framework */,
 				1B3F981017D5DB2000F88180 /* Foundation.framework */,
 				1B3F981217D5DB2000F88180 /* CoreGraphics.framework */,
 				1B3F981417D5DB2000F88180 /* UIKit.framework */,
@@ -375,6 +383,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../TryFirst",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DataCollection/DataCollection-Prefix.pch";
 				INFOPLIST_FILE = "DataCollection/DataCollection-Info.plist";
@@ -388,6 +400,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../TryFirst",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DataCollection/DataCollection-Prefix.pch";
 				INFOPLIST_FILE = "DataCollection/DataCollection-Info.plist";
@@ -455,6 +471,7 @@
 				1B3F984117D5DB2000F88180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B3F984217D5DB2000F88180 /* Build configuration list for PBXNativeTarget "DataCollectionTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +480,7 @@
 				1B3F984417D5DB2000F88180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

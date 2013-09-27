@@ -7,12 +7,15 @@
 //
 
 #import "DCAppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @implementation DCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [FBLoginView class];
+    
     return YES;
 }
 							
